@@ -60,6 +60,14 @@ matrix:
       env:
         GDALVERSION="3.0.3"
         PROJVERSION="6.2.1"
+        
+    - os: linux
+      arch: arm64
+      dist: xenial
+      python: "3.7"
+      env:
+        GDALVERSION="3.0.3"
+        PROJVERSION="6.2.1"
 
     - os: linux
       dist: xenial
@@ -69,6 +77,14 @@ matrix:
         PROJVERSION="6.2.1"
 
     - os: linux
+      dist: xenial
+      python: "3.8"
+      env:
+        GDALVERSION="master"
+        PROJVERSION="6.3.0"
+       
+    - os: linux
+      arch: arm64
       dist: xenial
       python: "3.8"
       env:
